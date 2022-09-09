@@ -1,0 +1,718 @@
+body {
+
+    height: 20%;
+    animation;
+    background-color: #2F262E;
+    font-family: 'Roboto', sans-serif;
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/yo.jpeg");
+  background-blend-mode:darken;
+
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position:static;
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+ /* Grey background */
+
+}
+l{
+  margin-left: 300px;
+}
+.skills {
+
+  text-align: right; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  color: white; /* White text color */
+  transition: all 2s linear;
+}
+
+.html {width: 90%; background-color: pink;} /* Green */
+.css {width: 80%; background-color: pink;} /* Blue */
+.c {width: 65%; background-color: pink;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 50;
+  padding: 130px;
+padding-top: 50px;
+  color: pink;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding:100px 10px 15px ;
+  font-size:30px;
+  color: #FF1053;
+
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding:500px 10px 80px ;
+  font-size:30px;
+  color: #FF1053;
+
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding:200px 10px 80px ;
+  font-size:30px;
+  color: #FF1053;
+
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding:300px 10px 80px ;
+  font-size:30px;
+  color: #FF1053;
+
+}
+
+* {box-sizing: border-box;}
+
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: absolute;
+  width: 50%;
+  max-width: 300px;
+  left: 40%;
+    color:pink;
+}
+.container2 {
+  color:pink;
+  padding-top: 	50px;
+  position: absolute;
+  width: 50%;
+  max-width: 600px;
+  left: 400px;
+}
+.container3 {
+  color:pink;
+  padding-top: 	50px;
+  position: absolute;
+  width: 50%;
+  max-width: 600px;
+  left: 1000px;
+}
+.image {
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: -120%;
+  top: 100px;
+}
+.image2 {
+  position: absolute;
+  width:2%;
+  height: auto;
+  left: 20%;
+  top: 620px;
+
+}
+.image3 {
+  position: absolute;
+  width:2%;
+  height: auto;
+  left: 45%;
+top: 620px;
+}
+.image4 {
+  position: absolute;
+  width:2%;
+  height: auto;
+  left: 70%;
+top: 620px;
+}
+.image5 {
+  position: absolute;
+  width:2%;
+  height: auto;
+  left: 50%;
+top: 680px;
+}
+.image6 {
+  position: absolute;
+  width:2%;
+  height: auto;
+  left: 20%;
+top: 680px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sidebar a {
+
+  text-decoration: none;
+  font-size: 20px;
+  color: #DC6083;
+  display:inline;
+padding-top: 0px 200px 9px;
+}
+
+
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.animated-line {
+    color: pink;
+    margin: 10px 30px;
+    font-size: 2rem;
+    background-image: linear-gradient(90deg, #62aeff, #ff0468, #af4ffe);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 700ms ease-in-out;
+}
+
+.animated-line:hover {
+    background-size: 100% 2px;
+}
+
+h1.animated-line {
+    display: inline;
+}
+p.contact{
+  font-family: 'Roboto', sans-serif;
+
+  margin: 50;
+  font-size: 15;
+  padding: 10px;
+
+  color: pink;
+}
+p.contact2{
+  font-size: 15;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  margin: 50;
+  padding: 10px;
+  padding-left: 500px;
+  color:#2F262E;
+}
+#myImg {
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 25px;
+  position: relative;
+  width: 20%;
+  height: auto;
+left: 175px ;
+padding: 10px;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  left: 300px;
+}
+
+/* Add a grey background color on mouse-over */
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+
+/* Add a grey background color on mouse-over */
+
+.modal {
+  display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  left: 160px;
+  top: 100px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.section-about .skills-charts {
+    width: 60%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.section-about #myCanvasContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.section-about #myCanvas {
+    margin: auto;
+    width: 100%;
+}
+
+
+
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: transparent;
+  font-weight: bold;
+  color: pink;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #A53860;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: blue;
+}
+.bar.back::before{
+  background-color: yellow;
+}
+
+.bar.learning::before{
+  width: calc(10% - 10px);
+}
+.bar.inter::before{
+  width: calc(30% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.mitg::before{
+  width: calc(50% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(70% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: transparent;
+border-style: solid;
+border-color: pink;
+border-bottom-color: transparent;
+margin-left: 140px;
+margin-bottom: -20px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: ##2F262E;
+    border-color: pink;
+    border-style: solid;
+    border-top-color: transparent;
+    margin-left: 140px;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: pink;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+
+  color: pink;
+}
+p.author{
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  margin: 50;
+  padding: 10px;
+  padding-left: 700px;
+  color: pink;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+
+  background-color: transparent;
+  width: 30%;
+  height: 300px;
+
+}
+.tabcontent h6,q{
+  font-family: 'Roboto', sans-serif;
+font-size: 22px;
+ padding-left: 0;
+  color: pink;
+
+}
+
+
+.tabcontent i{
+  font-family: 'Roboto', sans-serif;
+text-align:left;
+
+  color: #DC6083;
+font-size: 18px;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #DC6083;
+  padding: 22px 16px;
+  width: 75%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer
+  transition: 0.3s;
+  font-size: 17px;
+  margin-left: 400px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: black;
+  opacity: 50%;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: pink;
+  opacity: 100%;
+}
+
+/* Style the tab content */
+.tabcontent {
+
+
+font-family: 'Roboto', sans-serif;
+  width: 40%;
+  border-left: none;
+  height: 300px;
+margin-left: 1000px;
+margin-top: 50px;
+
+}
