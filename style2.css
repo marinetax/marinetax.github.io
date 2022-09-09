@@ -193,6 +193,8 @@ top: 620px;
   height: auto;
   left: 70%;
 top: 620px;
+width: 200px;
+height: 200px:
 }
 .image5 {
   position: absolute;
@@ -318,9 +320,8 @@ p.contact2{
   transition: 0.3s;
   border-radius: 25px;
   position: relative;
-  width: 20%;
-  height: auto;
-left: 175px ;
+
+left: 200px ;
 padding: 10px;
 }
 
